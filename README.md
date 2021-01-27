@@ -7,24 +7,9 @@
 * The target audience of this application would be instructors attempting to streamline attendance and gain more information regarding their students
 * This project is of particular interest to me because I was an instructor for two years in highschool and the most annoying part of my job was marking off attendance cards and cleaning them at the end of the month
 
-## User Stories
-* As a user i want to be able to make a new student and add it to the academys members
-* As a user i want to be able to be able to check in and have attendance recorded in a list of attendance
-* As a user I want to be able to select a student and view details about them
-* As a user I want to be able to remove a student from the list of students in my academy
-* As a user I want to be able to save the students in my academy for later
-* As a user I want to be able to load my saved students in my academy
 
-## Instructions for grader
-* you can generate the first required event by running guimain and  clicking "add student" and putting a name and an age for the student and clicking submit, be sure to input name and age in their respective fields 
-* you can generate the second required event by clicking "attend" and putting in the students name and a number representing the day, again be sure to the put them in their respective fields
-* you can generate a third event by clicking "remove" and putting in the students name
-* you can see the students added to the academy by clicking "list students", be sure that there are students in the academy before clicking the button
-* you can trigger the audio component by clicking any button
-* click "save" to save the students in the academy
-* click "load" to load the students in the academy
 
-## Phase 4 Task 2
+## Added Features
 * I chose to test and design a class that was robust,the class in question is the members class
 * The addNewMember, removeMember, and attendMember methods all throw checked execptions 
 * These checked exceptions are caught in the gui class, As a result the ui is more robust
@@ -34,7 +19,7 @@
 * If in the remove student option if there no student by that name the user is notified
 * In the attend class option if a number outside of the range of days is inputted the code no longer crashes and the user is notified 
 
-## Phase 4 Task 3
+## Fixed Bugs
 * Problem 1: The tags "Name", "Age" "Belt" "Attendance" in the writer class are used in three different locations. The writer class,reader class and in the liststudents method in the Members class
 * This is an example of coupling as in the event I decide to change the tags used for the student data stored I would have to change it in three different locations 
 * I fixed this issue by creating the "Global" class and making four static string variables which are used in writer,reader and members
